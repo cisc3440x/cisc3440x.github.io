@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="
+  Machine learning is all around us
+  #
+
+Machine learning, is the science of getting computers to learn
+without explicitly being programmed.
+We will learn how to implement machine learning alogrithms
+and how to make them perform well.
+Many of us have used &ldquo;Large Language Models&rdquo; like chatgpt, Grok, and
+Claude, but there are many times we may use machine learning
+withou being aware of it.
+
+Google uses machine learning to rank search results.
+Instatgram or snap chat tagged with our pictures with friends names, thats machine learning.
+Recomendation algorithms for similiar products from amazon and other
+movies you may like from netflix are also machine learning
+algorithms.
+Voice to text functionality on your phone, to siri, or google or is machine learning.
+Spam detection uses machine learning.
+Targeted advertising uses machine learning.
+Computer vision
+Industrial Applications
+
+Health care industry
+Energy sector
+Quality Control in Manufacturing
+
+
+
+
+  What is Machine Learning
+  #
+
+
+&ldquo;Field of study that gives computers the ability to learn
+without explicitly being programmed.&rdquo;">
+<meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
+<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#343a40">
+<meta name="color-scheme" content="light dark"><meta property="og:url" content="/docs/concepts/ml_applications/">
+  <meta property="og:site_name" content="Brooklyn College CISC 3440 Machine Learning">
+  <meta property="og:title" content="ML Applications">
+  <meta property="og:description" content="Machine learning is all around us # Machine learning, is the science of getting computers to learn without explicitly being programmed.
+We will learn how to implement machine learning alogrithms and how to make them perform well.
+Many of us have used “Large Language Models” like chatgpt, Grok, and Claude, but there are many times we may use machine learning withou being aware of it.
+Google uses machine learning to rank search results. Instatgram or snap chat tagged with our pictures with friends names, thats machine learning. Recomendation algorithms for similiar products from amazon and other movies you may like from netflix are also machine learning algorithms. Voice to text functionality on your phone, to siri, or google or is machine learning. Spam detection uses machine learning. Targeted advertising uses machine learning. Computer vision Industrial Applications Health care industry Energy sector Quality Control in Manufacturing What is Machine Learning # “Field of study that gives computers the ability to learn without explicitly being programmed.”">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="docs">
+<title>ML Applications | Brooklyn College CISC 3440 Machine Learning</title>
+<link rel="icon" href="/favicon.png" >
+<link rel="manifest" href="/manifest.json">
+<link rel="canonical" href="/docs/concepts/ml_applications/">
+<link rel="stylesheet" href="/book.min.a7616cf2799b58bddffce9438e31fdbfc6393687cfc0950a4a17cd1cce7e35f6.css" >
+  <script defer src="/fuse.min.js"></script>
+  <script defer src="/en.search.min.cbd824af0bf2bfb16c56ba4b807170a1e6e31625b1dabd19c33cd4d8743ebe62.js" ></script>
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+  
+</head>
+<body dir="ltr">
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      <div class="book-menu-content">
+        
+  <nav>
+<h2 class="book-brand">
+  <a class="flex align-center" href="/"><span>Brooklyn College CISC 3440 Machine Learning</span>
+  </a>
+</h2>
+
+
+<div class="book-search hidden">
+  <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+<script>document.querySelector(".book-search").classList.remove("hidden")</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/home/" class="">Course Information</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/concepts/" class="">Concepts</a>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/concepts/ml_applications/" class="active">ML Applications</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/concepts/supervised_learning/" class="">Supervised Learning Algorithm</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <span>Projects</span>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+
+
+ 
+      </div>
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <h3>ML Applications</h3>
+
+  <label for="toc-control">
+    
+    <img src="/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
+
+
+  
+  <aside class="hidden clearfix">
+    
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#machine-learning-is-all-around-us"><strong>Machine learning is all around us</strong></a></li>
+    <li><a href="#what-is-machine-learning"><strong>What is Machine Learning</strong></a></li>
+  </ul>
+</nav>
+
+
+
+  </aside>
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown book-article"><h2 id="machine-learning-is-all-around-us">
+  <strong>Machine learning is all around us</strong>
+  <a class="anchor" href="#machine-learning-is-all-around-us">#</a>
+</h2>
+<p>Machine learning, is the science of getting computers to learn
+without explicitly being programmed.</p>
+<p>We will learn how to implement machine learning alogrithms
+and how to make them perform well.</p>
+<p>Many of us have used &ldquo;Large Language Models&rdquo; like chatgpt, Grok, and
+Claude, but there are many times we may use machine learning
+withou being aware of it.</p>
+<ul>
+<li>Google uses machine learning to <strong>rank search results</strong>.</li>
+<li>Instatgram or snap chat <strong>tagged with our pictures with friends names</strong>, thats machine learning.</li>
+<li><strong>Recomendation algorithms</strong> for similiar products from amazon and other
+movies you may like from netflix are also machine learning
+algorithms.</li>
+<li><strong>Voice to text</strong> functionality on your phone, to siri, or google or is machine learning.</li>
+<li><strong>Spam detection</strong> uses machine learning.</li>
+<li><strong>Targeted advertising</strong> uses machine learning.</li>
+<li><strong>Computer vision</strong></li>
+<li><strong>Industrial Applications</strong>
+<ul>
+<li>Health care industry</li>
+<li>Energy sector</li>
+<li>Quality Control in Manufacturing</li>
+</ul>
+</li>
+</ul>
+<h2 id="what-is-machine-learning">
+  <strong>What is Machine Learning</strong>
+  <a class="anchor" href="#what-is-machine-learning">#</a>
+</h2>
+<blockquote>
+<p>&ldquo;Field of study that gives computers the ability to learn
+without explicitly being programmed.&rdquo;</p>
+<p>Arthur Samuel, 1959</p></blockquote>
+<p>Arthur Samuel wrote a machine learning algorithm in 1959 to teach a computer
+to play checkers. His plan was to have the computer play 1000&rsquo;s of games of
+checkers against itself to LEARN what the better POSITIONS were.</p>
+<p>In general the more games the computer could play the more it would learn. If it only
+played 10 games it would learn much less than play 10000.</p>
+<p><strong>THE MORE YOU GIVE A LEARNING ALGORITHM THE OPPORTUNITY TO LEARN THE BETTER IT WILL PERFORM!!</strong></p>
+</article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+
+
+
+
+</div>
+
+
+
+  <script>(function(){function e(e){const t=window.getSelection(),n=document.createRange();n.selectNodeContents(e),t.removeAllRanges(),t.addRange(n)}document.querySelectorAll("pre code").forEach(t=>{t.addEventListener("click",function(){if(window.getSelection().toString())return;e(t.parentElement),navigator.clipboard&&navigator.clipboard.writeText(t.parentElement.textContent)})})})()</script>
+
+
+ 
+        
+      </footer>
+
+      
+  
+  <div class="book-comments">
+
+</div>
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+    <aside class="book-toc">
+      <div class="book-toc-content">
+        
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#machine-learning-is-all-around-us"><strong>Machine learning is all around us</strong></a></li>
+    <li><a href="#what-is-machine-learning"><strong>What is Machine Learning</strong></a></li>
+  </ul>
+</nav>
+
+
+ 
+      </div>
+    </aside>
+    
+  </main>
+
+  
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

@@ -7,5 +7,19 @@
     <generator>Hugo</generator>
     <language>en-us</language>
     <atom:link href="/docs/concepts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ML Applications</title>
+      <link>/docs/concepts/ml_applications/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/docs/concepts/ml_applications/</guid>
+      <description>&lt;h2 id=&#34;machine-learning-is-all-around-us&#34;&gt;&#xA;  &lt;strong&gt;Machine learning is all around us&lt;/strong&gt;&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#machine-learning-is-all-around-us&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;Machine learning, is the science of getting computers to learn&#xA;without explicitly being programmed.&lt;/p&gt;&#xA;&lt;p&gt;We will learn how to implement machine learning alogrithms&#xA;and how to make them perform well.&lt;/p&gt;&#xA;&lt;p&gt;Many of us have used &amp;ldquo;Large Language Models&amp;rdquo; like chatgpt, Grok, and&#xA;Claude, but there are many times we may use machine learning&#xA;withou being aware of it.&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Google uses machine learning to &lt;strong&gt;rank search results&lt;/strong&gt;.&lt;/li&gt;&#xA;&lt;li&gt;Instatgram or snap chat &lt;strong&gt;tagged with our pictures with friends names&lt;/strong&gt;, thats machine learning.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Recomendation algorithms&lt;/strong&gt; for similiar products from amazon and other&#xA;movies you may like from netflix are also machine learning&#xA;algorithms.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Voice to text&lt;/strong&gt; functionality on your phone, to siri, or google or is machine learning.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Spam detection&lt;/strong&gt; uses machine learning.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Targeted advertising&lt;/strong&gt; uses machine learning.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Computer vision&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Industrial Applications&lt;/strong&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Health care industry&lt;/li&gt;&#xA;&lt;li&gt;Energy sector&lt;/li&gt;&#xA;&lt;li&gt;Quality Control in Manufacturing&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;what-is-machine-learning&#34;&gt;&#xA;  &lt;strong&gt;What is Machine Learning&lt;/strong&gt;&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#what-is-machine-learning&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;&amp;ldquo;Field of study that gives computers the ability to learn&#xA;without explicitly being programmed.&amp;rdquo;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Supervised Learning Algorithm</title>
+      <link>/docs/concepts/supervised_learning/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/docs/concepts/supervised_learning/</guid>
+      <description>&lt;h2 id=&#34;supervised-learning&#34;&gt;&#xA;  &lt;strong&gt;Supervised Learning&lt;/strong&gt;&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#supervised-learning&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;Maps inputs to outputs.&lt;/p&gt;&#xA;&lt;p&gt;Supervised Machine Learning refers to algorithms that learn&#xA;Mappings from input to output. In other words given an&#xA;x what is the y. Given the input what is the ouput.&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;input =&amp;gt; output&lt;/li&gt;&#xA;&lt;li&gt;x =&amp;gt; y&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;train-on-labeled-data&#34;&gt;&#xA;  Train on Labeled Data&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#train-on-labeled-data&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;You train the learning algorithm by feeding it labeled data.  Labeled&#xA;data is a data set that includes correct examples of x =&amp;gt; y mappings.&lt;/p&gt;</description>
+    </item>
   </channel>
 </rss>

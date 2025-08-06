@@ -4,38 +4,41 @@
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="
-  ML Applications
+  Supervised Learning
   #
 
+Maps inputs to outputs.
+Supervised Machine Learning refers to algorithms that learn
+Mappings from input to output. In other words given an
+x what is the y. Given the input what is the ouput.
 
-  Machine learning is all around us
+input =&gt; output
+x =&gt; y
+
+
+  Train on Labeled Data
   #
 
-Machine learning, is the science of getting computers to learn
-without explicitly being programmed.
-We will learn how to implement machine learning alogrithms
-and how to make them perform well.
-Many of us have used &ldquo;Large Language Models&rdquo; like chatgpt, Grok, and
-Claude, but there are many times we may use machine learning
-withou being aware of it.">
+You train the learning algorithm by feeding it labeled data.  Labeled
+data is a data set that includes correct examples of x =&gt; y mappings.">
 <meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
 <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#343a40">
-<meta name="color-scheme" content="light dark"><meta property="og:url" content="/docs/concepts/">
+<meta name="color-scheme" content="light dark"><meta property="og:url" content="/docs/concepts/supervised_learning/">
   <meta property="og:site_name" content="Brooklyn College CISC 3440 Machine Learning">
-  <meta property="og:title" content="Concepts">
-  <meta property="og:description" content="ML Applications # Machine learning is all around us # Machine learning, is the science of getting computers to learn without explicitly being programmed.
-We will learn how to implement machine learning alogrithms and how to make them perform well.
-Many of us have used “Large Language Models” like chatgpt, Grok, and Claude, but there are many times we may use machine learning withou being aware of it.">
+  <meta property="og:title" content="Supervised Learning Algorithm">
+  <meta property="og:description" content="Supervised Learning # Maps inputs to outputs.
+Supervised Machine Learning refers to algorithms that learn Mappings from input to output. In other words given an x what is the y. Given the input what is the ouput.
+input =&gt; output x =&gt; y Train on Labeled Data # You train the learning algorithm by feeding it labeled data. Labeled data is a data set that includes correct examples of x =&gt; y mappings.">
   <meta property="og:locale" content="en_us">
-  <meta property="og:type" content="website">
-<title>Concepts | Brooklyn College CISC 3440 Machine Learning</title>
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="docs">
+<title>Supervised Learning Algorithm | Brooklyn College CISC 3440 Machine Learning</title>
 <link rel="icon" href="/favicon.png" >
 <link rel="manifest" href="/manifest.json">
-<link rel="canonical" href="/docs/concepts/">
+<link rel="canonical" href="/docs/concepts/supervised_learning/">
 <link rel="stylesheet" href="/book.min.a7616cf2799b58bddffce9438e31fdbfc6393687cfc0950a4a17cd1cce7e35f6.css" >
   <script defer src="/fuse.min.js"></script>
   <script defer src="/en.search.min.cbd824af0bf2bfb16c56ba4b807170a1e6e31625b1dabd19c33cd4d8743ebe62.js" ></script>
-<link rel="alternate" type="application/rss+xml" href="/docs/concepts/index.xml" title="Brooklyn College CISC 3440 Machine Learning" />
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -105,7 +108,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/docs/concepts/" class="active">Concepts</a>
+    <a href="/docs/concepts/" class="">Concepts</a>
   
 
           
@@ -131,7 +134,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/docs/concepts/supervised_learning/" class="">Supervised Learning Algorithm</a>
+    <a href="/docs/concepts/supervised_learning/" class="active">Supervised Learning Algorithm</a>
   
 
         </li>
@@ -195,7 +198,7 @@ https://github.com/alex-shpak/hugo-book
     <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
   </label>
 
-  <h3>Concepts</h3>
+  <h3>Supervised Learning Algorithm</h3>
 
   <label for="toc-control">
     
@@ -211,21 +214,18 @@ https://github.com/alex-shpak/hugo-book
   
 <nav id="TableOfContents">
   <ul>
-    <li><a href="#ML_Applications">ML Applications</a>
+    <li><a href="#supervised-learning"><strong>Supervised Learning</strong></a></li>
+    <li><a href="#train-on-labeled-data">Train on Labeled Data</a></li>
+    <li><a href="#applications">Applications</a>
       <ul>
-        <li><a href="#machine-learning-is-all-around-us"><strong>Machine learning is all around us</strong></a></li>
-        <li><a href="#what-is-machine-learning"><strong>What is Machine Learning</strong></a></li>
+        <li><a href="#email-spam-filters">Email spam filters</a></li>
+        <li><a href="#speech-recognition">speech recognition</a></li>
+        <li><a href="#machine-translation">Machine Translation</a></li>
+        <li><a href="#online-advertising">Online Advertising</a></li>
+        <li><a href="#self-driving">Self Driving</a></li>
+        <li><a href="#visual-inspection-in-manufacturing">Visual Inspection in manufacturing</a></li>
       </ul>
     </li>
-    <li><a href="#supervised-learning-algorithms">Supervised Learning Algorithms</a>
-      <ul>
-        <li><a href="#maps-inputs-to-outputs">Maps inputs to outputs</a></li>
-        <li><a href="#train-on-labeled-data">Train on Labeled Data</a></li>
-        <li><a href="#applications">Applications</a></li>
-      </ul>
-    </li>
-    <li><a href="#supervised-1-time-3-47-housing-prices"><!-- raw HTML omitted -->TODO<!-- raw HTML omitted --> supervised 1 time 3:47 housing prices</a></li>
-    <li><a href="#unsupervised-learning">Unsupervised Learning</a></li>
   </ul>
 </nav>
 
@@ -238,93 +238,36 @@ https://github.com/alex-shpak/hugo-book
 
       
       
-  <article class="markdown book-article"><h2 id="ML_Applications">
-  ML Applications
-  <a class="anchor" href="#ML_Applications">#</a>
+  <article class="markdown book-article"><h2 id="supervised-learning">
+  <strong>Supervised Learning</strong>
+  <a class="anchor" href="#supervised-learning">#</a>
 </h2>
-<h3 id="machine-learning-is-all-around-us">
-  <strong>Machine learning is all around us</strong>
-  <a class="anchor" href="#machine-learning-is-all-around-us">#</a>
-</h3>
-<p>Machine learning, is the science of getting computers to learn
-without explicitly being programmed.</p>
-<p>We will learn how to implement machine learning alogrithms
-and how to make them perform well.</p>
-<p>Many of us have used &ldquo;Large Language Models&rdquo; like chatgpt, Grok, and
-Claude, but there are many times we may use machine learning
-withou being aware of it.</p>
-<ul>
-<li>Google uses machine learning to <strong>rank search results</strong>.</li>
-<li>Instatgram or snap chat <strong>tagged with our pictures with friends names</strong>, thats machine learning.</li>
-<li><strong>Recomendation algorithms</strong> for similiar products from amazon and other
-movies you may like from netflix are also machine learning
-algorithms.</li>
-<li><strong>Voice to text</strong> functionality on your phone, to siri, or google or is machine learning.</li>
-<li><strong>Spam detection</strong> uses machine learning.</li>
-<li><strong>Targeted advertising</strong> uses machine learning.</li>
-<li><strong>Computer vision</strong></li>
-<li><strong>Industrial Applications</strong>
-<ul>
-<li>Health care industry</li>
-<li>Energy sector</li>
-<li>Quality Control in Manufacturing</li>
-</ul>
-</li>
-</ul>
-<h3 id="what-is-machine-learning">
-  <strong>What is Machine Learning</strong>
-  <a class="anchor" href="#what-is-machine-learning">#</a>
-</h3>
-<blockquote>
-<p>&ldquo;Field of study that gives computers the ability to learn
-without explicitly being programmed.&rdquo;</p>
-<p>Arthur Samuel, 1959</p></blockquote>
-<p>Arthur Samuel wrote a machine learning algorithm in 1959 to teach a computer
-to play checkers. His plan was to have the computer play 1000&rsquo;s of games of
-checkers against itself to LEARN what the better POSITIONS were.</p>
-<p>In general the more games the computer could play the more it would learn. If it only
-played 10 games it would learn much less than play 10000.</p>
-<p><strong>THE MORE YOU GIVE A LEARNING ALGORITHM THE OPPORTUNITY TO LEARN THE BETTER IT WILL PERFORM!!</strong></p>
-<p>There are several major Categories of learning algorithms</p>
-<ul>
-<li>supervised learning (Most Common in Real World applications)</li>
-<li>unsupervised learning</li>
-<li>recommender systems</li>
-<li>reinforcement learning</li>
-</ul>
-<h2 id="supervised-learning-algorithms">
-  Supervised Learning Algorithms
-  <a class="anchor" href="#supervised-learning-algorithms">#</a>
-</h2>
-<h3 id="maps-inputs-to-outputs">
-  Maps inputs to outputs
-  <a class="anchor" href="#maps-inputs-to-outputs">#</a>
-</h3>
+<p>Maps inputs to outputs.</p>
+<p>Supervised Machine Learning refers to algorithms that learn
+Mappings from input to output. In other words given an
+x what is the y. Given the input what is the ouput.</p>
 <ul>
 <li>input =&gt; output</li>
 <li>x =&gt; y</li>
 </ul>
-<p>Supervised Machine Learning refers to algorithms that learn
-Mappings from input to output. In other words given an
-x what is the y. Given the input what is the ouput.</p>
-<h3 id="train-on-labeled-data">
+<h2 id="train-on-labeled-data">
   Train on Labeled Data
   <a class="anchor" href="#train-on-labeled-data">#</a>
-</h3>
+</h2>
 <p>You train the learning algorithm by feeding it labeled data.  Labeled
 data is a data set that includes correct examples of x =&gt; y mappings.</p>
-<h3 id="applications">
+<h2 id="applications">
   Applications
   <a class="anchor" href="#applications">#</a>
-</h3>
+</h2>
 <p>In all of the following application we would first train our models with
 examples of  input x to correct output y mappings. After the model has been
 trained it can then take a brand new input x it has never seen before and try to
 predict the corresponding output y.</p>
-<h4 id="email-spam-filters">
+<h3 id="email-spam-filters">
   Email spam filters
   <a class="anchor" href="#email-spam-filters">#</a>
-</h4>
+</h3>
 <table>
   <thead>
       <tr>
@@ -345,10 +288,10 @@ is labeled  as either</p>
 <li>spam</li>
 <li>not spam.</li>
 </ul>
-<h4 id="speech-recognition">
+<h3 id="speech-recognition">
   speech recognition
   <a class="anchor" href="#speech-recognition">#</a>
-</h4>
+</h3>
 <table>
   <thead>
       <tr>
@@ -368,10 +311,10 @@ is labeled  as either</p>
   </tbody>
 </table>
 <p>If the input x is audio and the output is a printed string of text.</p>
-<h4 id="machine-translation">
+<h3 id="machine-translation">
   Machine Translation
   <a class="anchor" href="#machine-translation">#</a>
-</h4>
+</h3>
 <table>
   <thead>
       <tr>
@@ -390,10 +333,10 @@ is labeled  as either</p>
       </tr>
   </tbody>
 </table>
-<h4 id="online-advertising">
+<h3 id="online-advertising">
   Online Advertising
   <a class="anchor" href="#online-advertising">#</a>
-</h4>
+</h3>
 <table>
   <thead>
       <tr>
@@ -420,10 +363,10 @@ they will.</p>
 <p>an add.</p>
 </li>
 </ul>
-<h4 id="self-driving">
+<h3 id="self-driving">
   Self Driving
   <a class="anchor" href="#self-driving">#</a>
-</h4>
+</h3>
 <table>
   <thead>
       <tr>
@@ -440,10 +383,10 @@ they will.</p>
 </table>
 <p>Given an input image or radar info predict the position
 of other cars or obstructions.</p>
-<h4 id="visual-inspection-in-manufacturing">
+<h3 id="visual-inspection-in-manufacturing">
   Visual Inspection in manufacturing
   <a class="anchor" href="#visual-inspection-in-manufacturing">#</a>
-</h4>
+</h3>
 <table>
   <thead>
       <tr>
@@ -460,14 +403,6 @@ of other cars or obstructions.</p>
 </table>
 <p>Given an input image of a product off an assembly line
 output wether there is a defect or not.</p>
-<h2 id="supervised-1-time-3-47-housing-prices">
-  <!-- raw HTML omitted -->TODO<!-- raw HTML omitted --> supervised 1 time 3:47 housing prices
-  <a class="anchor" href="#supervised-1-time-3-47-housing-prices">#</a>
-</h2>
-<h2 id="unsupervised-learning">
-  Unsupervised Learning
-  <a class="anchor" href="#unsupervised-learning">#</a>
-</h2>
 </article>
  
       
@@ -509,21 +444,18 @@ output wether there is a defect or not.</p>
   
 <nav id="TableOfContents">
   <ul>
-    <li><a href="#ML_Applications">ML Applications</a>
+    <li><a href="#supervised-learning"><strong>Supervised Learning</strong></a></li>
+    <li><a href="#train-on-labeled-data">Train on Labeled Data</a></li>
+    <li><a href="#applications">Applications</a>
       <ul>
-        <li><a href="#machine-learning-is-all-around-us"><strong>Machine learning is all around us</strong></a></li>
-        <li><a href="#what-is-machine-learning"><strong>What is Machine Learning</strong></a></li>
+        <li><a href="#email-spam-filters">Email spam filters</a></li>
+        <li><a href="#speech-recognition">speech recognition</a></li>
+        <li><a href="#machine-translation">Machine Translation</a></li>
+        <li><a href="#online-advertising">Online Advertising</a></li>
+        <li><a href="#self-driving">Self Driving</a></li>
+        <li><a href="#visual-inspection-in-manufacturing">Visual Inspection in manufacturing</a></li>
       </ul>
     </li>
-    <li><a href="#supervised-learning-algorithms">Supervised Learning Algorithms</a>
-      <ul>
-        <li><a href="#maps-inputs-to-outputs">Maps inputs to outputs</a></li>
-        <li><a href="#train-on-labeled-data">Train on Labeled Data</a></li>
-        <li><a href="#applications">Applications</a></li>
-      </ul>
-    </li>
-    <li><a href="#supervised-1-time-3-47-housing-prices"><!-- raw HTML omitted -->TODO<!-- raw HTML omitted --> supervised 1 time 3:47 housing prices</a></li>
-    <li><a href="#unsupervised-learning">Unsupervised Learning</a></li>
   </ul>
 </nav>
 
