@@ -4,19 +4,22 @@
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="
-  Supervised Learning
+  What is Supervised Learning.
   #
 
-Maps inputs to outputs.
+
+  A. Map inputs to outputs
+  #
+
 Supervised Machine Learning refers to algorithms that learn
-Mappings from input to output. In other words given an
-x what is the y. Given the input what is the ouput.
+Mappings from input to output. In other words given an x what is the
+y. Given the input what is the ouput.
 
 input =&gt; output
 x =&gt; y
 
 
-  Train on Labeled Data
+  B.  Trains on Labeled Data
   #
 
 You train the learning algorithm by feeding it labeled data.  Labeled
@@ -26,9 +29,8 @@ data is a data set that includes correct examples of x =&gt; y mappings.">
 <meta name="color-scheme" content="light dark"><meta property="og:url" content="/docs/concepts/supervised_learning/">
   <meta property="og:site_name" content="Brooklyn College CISC 3440 Machine Learning">
   <meta property="og:title" content="Supervised Learning Algorithm">
-  <meta property="og:description" content="Supervised Learning # Maps inputs to outputs.
-Supervised Machine Learning refers to algorithms that learn Mappings from input to output. In other words given an x what is the y. Given the input what is the ouput.
-input =&gt; output x =&gt; y Train on Labeled Data # You train the learning algorithm by feeding it labeled data. Labeled data is a data set that includes correct examples of x =&gt; y mappings.">
+  <meta property="og:description" content="What is Supervised Learning. # A. Map inputs to outputs # Supervised Machine Learning refers to algorithms that learn Mappings from input to output. In other words given an x what is the y. Given the input what is the ouput.
+input =&gt; output x =&gt; y B. Trains on Labeled Data # You train the learning algorithm by feeding it labeled data. Labeled data is a data set that includes correct examples of x =&gt; y mappings.">
   <meta property="og:locale" content="en_us">
   <meta property="og:type" content="article">
     <meta property="article:section" content="docs">
@@ -38,7 +40,7 @@ input =&gt; output x =&gt; y Train on Labeled Data # You train the learning algo
 <link rel="canonical" href="/docs/concepts/supervised_learning/">
 <link rel="stylesheet" href="/book.min.a7616cf2799b58bddffce9438e31fdbfc6393687cfc0950a4a17cd1cce7e35f6.css" >
   <script defer src="/fuse.min.js"></script>
-  <script defer src="/en.search.min.d976c5e167d55eeadea0ef73300edb9a1b9f73239f28340edede8f296465f2d6.js" ></script>
+  <script defer src="/en.search.min.9a0f4e205cbad44d1fedd8a2102fb54e61b3a813b66c4f9cf7079506ca0fd3ea.js" ></script>
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -214,16 +216,27 @@ https://github.com/alex-shpak/hugo-book
   
 <nav id="TableOfContents">
   <ul>
-    <li><a href="#supervised-learning"><strong>Supervised Learning</strong></a></li>
-    <li><a href="#train-on-labeled-data">Train on Labeled Data</a></li>
+    <li><a href="#what-is-supervised-learning-dot">What is Supervised Learning.</a>
+      <ul>
+        <li><a href="#a-dot-map-inputs-to-outputs"><strong>A. Map inputs to outputs</strong></a></li>
+        <li><a href="#b-dot-trains-on-labeled-data"><strong>B.  Trains on Labeled Data</strong></a></li>
+      </ul>
+    </li>
     <li><a href="#applications">Applications</a>
       <ul>
         <li><a href="#email-spam-filters">Email spam filters</a></li>
-        <li><a href="#speech-recognition">speech recognition</a></li>
+        <li><a href="#speech-recognition">Speech recognition</a></li>
         <li><a href="#machine-translation">Machine Translation</a></li>
         <li><a href="#online-advertising">Online Advertising</a></li>
         <li><a href="#self-driving">Self Driving</a></li>
         <li><a href="#visual-inspection-in-manufacturing">Visual Inspection in manufacturing</a></li>
+      </ul>
+    </li>
+    <li><a href="#supervised-learning-algorithms">Supervised Learning Algorithms</a>
+      <ul>
+        <li><a href="#regression-housing-price-prediction-example"><strong>REGRESSION</strong> Housing price prediction example</a></li>
+        <li><a href="#classification-breast-cancer-detection-example"><strong>CLASSIFICATION: breast cancer detection example</strong></a></li>
+        <li><a href="#mulitiple-input-values"><strong>Mulitiple Input Values</strong></a></li>
       </ul>
     </li>
   </ul>
@@ -238,22 +251,25 @@ https://github.com/alex-shpak/hugo-book
 
       
       
-  <article class="markdown book-article"><h2 id="supervised-learning">
-  <strong>Supervised Learning</strong>
-  <a class="anchor" href="#supervised-learning">#</a>
+  <article class="markdown book-article"><h2 id="what-is-supervised-learning-dot">
+  What is Supervised Learning.
+  <a class="anchor" href="#what-is-supervised-learning-dot">#</a>
 </h2>
-<p>Maps inputs to outputs.</p>
+<h3 id="a-dot-map-inputs-to-outputs">
+  <strong>A. Map inputs to outputs</strong>
+  <a class="anchor" href="#a-dot-map-inputs-to-outputs">#</a>
+</h3>
 <p>Supervised Machine Learning refers to algorithms that learn
-Mappings from input to output. In other words given an
-x what is the y. Given the input what is the ouput.</p>
+Mappings from input to output. In other words given an x what is the
+y. Given the input what is the ouput.</p>
 <ul>
 <li>input =&gt; output</li>
 <li>x =&gt; y</li>
 </ul>
-<h2 id="train-on-labeled-data">
-  Train on Labeled Data
-  <a class="anchor" href="#train-on-labeled-data">#</a>
-</h2>
+<h3 id="b-dot-trains-on-labeled-data">
+  <strong>B.  Trains on Labeled Data</strong>
+  <a class="anchor" href="#b-dot-trains-on-labeled-data">#</a>
+</h3>
 <p>You train the learning algorithm by feeding it labeled data.  Labeled
 data is a data set that includes correct examples of x =&gt; y mappings.</p>
 <h2 id="applications">
@@ -289,7 +305,7 @@ is labeled  as either</p>
 <li>not spam.</li>
 </ul>
 <h3 id="speech-recognition">
-  speech recognition
+  Speech recognition
   <a class="anchor" href="#speech-recognition">#</a>
 </h3>
 <table>
@@ -403,6 +419,93 @@ of other cars or obstructions.</p>
 </table>
 <p>Given an input image of a product off an assembly line
 output wether there is a defect or not.</p>
+<h2 id="supervised-learning-algorithms">
+  Supervised Learning Algorithms
+  <a class="anchor" href="#supervised-learning-algorithms">#</a>
+</h2>
+<h3 id="regression-housing-price-prediction-example">
+  <strong>REGRESSION</strong> Housing price prediction example
+  <a class="anchor" href="#regression-housing-price-prediction-example">#</a>
+</h3>
+<p><strong>REGRESSION:</strong> we are trying to predict a number from infinite
+possiblities of numbers.</p>
+<p>Say you want to predict housing prices based on the size of the house.
+You collect real world data and graph it sqfeet(x) to=&gt; price(y).</p>
+<figure><img src="/ox-hugo/2025-08-07_10-43-58_screenshot.png">
+</figure>
+
+<p>To make predictions you can try and <strong>FIT a straight line</strong> y = mx + b.
+to the data, and when asked how much a 750sq foot house should cost
+you can find the x,y coordinates of the line. That gives you the
+sqfoot to price relation. In this case using a line to fit the data,
+your algoritm would predict ~150k for the price of the house.</p>
+<figure><img src="/ox-hugo/2025-08-07_10-46-39_screenshot.png">
+</figure>
+
+<p>You may feel like a straight line is not accurate enough and
+want to use a more complex equation of a curve that fits the
+training data more accurately. If you make the prediction using
+the curve the price would be closer to 200k.</p>
+<figure><img src="/ox-hugo/2025-08-07_10-51-18_screenshot.png">
+</figure>
+
+<p>The idea is to find an equation that best fits the training data to give you
+the most accurate predictions.</p>
+<p><strong>Remember: REGRESSION IS TRYING TO FIND A NUMBER OUT OF INFINITE POSSIBILITIES.</strong></p>
+<h3 id="classification-breast-cancer-detection-example">
+  <strong>CLASSIFICATION: breast cancer detection example</strong>
+  <a class="anchor" href="#classification-breast-cancer-detection-example">#</a>
+</h3>
+<p>We can build a machine learning diagnostic tool to try and
+CLASSIFY a tumor as ( benign(0) | malignant(1) ).  The idea is to use
+a patients medical data to predict one or the other.</p>
+<p>We can collect medical data for a  training set that plots size of tumor(x)
+to diagnosis(y).  In the case of <strong>CLASSIFICATION</strong> we are trying to pick one out of
+2 possible categories, either benign or malignant which we can specify as 0 and 1.</p>
+<p>IN <strong>classification</strong> there are only a small number of possible outputs or categories from
+which we are trying to predict from as opposed to <strong>regression</strong> which has an infinite set
+of possibilities.</p>
+<figure><img src="/ox-hugo/2025-08-07_11-26-27_screenshot.png">
+</figure>
+
+<p>We can also plot this data set on a single axis becuase there are a limited number of y&rsquo;s for each x.
+That we can denote with the symbols (X O).</p>
+<figure><img src="/ox-hugo/2025-08-07_11-29-13_screenshot.png">
+</figure>
+
+<p>In classification algorithms, there may be more than 2 possilbe outcomes.
+We can have 3 possible output categories or classes as below.</p>
+<figure><img src="/ox-hugo/2025-08-07_11-31-59_screenshot.png">
+</figure>
+
+<p><strong>REMEMBER: CLASSIFCATION ALGORITHMS PREDICT CATEGORIES OR CLASSES(These are
+synonyms) and the OUTPUT is chosen from a small
+finite set of limited possible output categories/classes</strong></p>
+<h3 id="mulitiple-input-values">
+  <strong>Mulitiple Input Values</strong>
+  <a class="anchor" href="#mulitiple-input-values">#</a>
+</h3>
+<p>Supervised learning Algorithms can use more than one input for our data sets.
+For example: let&rsquo;s say instead of just tumor size we also collect data on the
+patients age in years.</p>
+<p>We can use the y coordinage for age and the x coordinate for tumor size
+and the symbols (X O) for malignant and benign tumors at any given age tumor
+size data point. We can then try and fit a curve or a line that
+acts as a boundary line between the groupings. In the example below the
+algorithm woudld predict that anything to the left of the pink line to be
+benign and to the right to be malignant.</p>
+<figure><img src="/ox-hugo/2025-08-07_11-43-38_screenshot.png">
+</figure>
+
+<p>Supervised machine learning algorithms in the real world often us many inputs for their
+predictions. For example in predicting housing prices an algorithm may use.</p>
+<ul>
+<li>size in sq feet</li>
+<li>number of bedrooms</li>
+<li>number of bathrooms</li>
+<li>zip code</li>
+<li>etc&hellip;</li>
+</ul>
 </article>
  
       
@@ -444,16 +547,27 @@ output wether there is a defect or not.</p>
   
 <nav id="TableOfContents">
   <ul>
-    <li><a href="#supervised-learning"><strong>Supervised Learning</strong></a></li>
-    <li><a href="#train-on-labeled-data">Train on Labeled Data</a></li>
+    <li><a href="#what-is-supervised-learning-dot">What is Supervised Learning.</a>
+      <ul>
+        <li><a href="#a-dot-map-inputs-to-outputs"><strong>A. Map inputs to outputs</strong></a></li>
+        <li><a href="#b-dot-trains-on-labeled-data"><strong>B.  Trains on Labeled Data</strong></a></li>
+      </ul>
+    </li>
     <li><a href="#applications">Applications</a>
       <ul>
         <li><a href="#email-spam-filters">Email spam filters</a></li>
-        <li><a href="#speech-recognition">speech recognition</a></li>
+        <li><a href="#speech-recognition">Speech recognition</a></li>
         <li><a href="#machine-translation">Machine Translation</a></li>
         <li><a href="#online-advertising">Online Advertising</a></li>
         <li><a href="#self-driving">Self Driving</a></li>
         <li><a href="#visual-inspection-in-manufacturing">Visual Inspection in manufacturing</a></li>
+      </ul>
+    </li>
+    <li><a href="#supervised-learning-algorithms">Supervised Learning Algorithms</a>
+      <ul>
+        <li><a href="#regression-housing-price-prediction-example"><strong>REGRESSION</strong> Housing price prediction example</a></li>
+        <li><a href="#classification-breast-cancer-detection-example"><strong>CLASSIFICATION: breast cancer detection example</strong></a></li>
+        <li><a href="#mulitiple-input-values"><strong>Mulitiple Input Values</strong></a></li>
       </ul>
     </li>
   </ul>
