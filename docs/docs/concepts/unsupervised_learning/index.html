@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="
+  What is Unsupervised Learning
+  #
+
+In supervised learning data comes with
+
+inputs x
+output labels y
+
+In unsupervised learning data comes with
+
+inputs x
+
+The unsupervised algorithm job is to find some some pattern or structure in the data.
+In unsupervised learning we are given the data set without any
+labels. The unsupervised algorithm is tasked with trying to find
+interesting patterns that are present in the data. It doesn&rsquo;t look for
+any predifined particuliar category like a classfication algorithm
+or for a number like a regression algorithm.">
+<meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
+<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#343a40">
+<meta name="color-scheme" content="light dark"><meta property="og:url" content="/docs/concepts/unsupervised_learning/">
+  <meta property="og:site_name" content="Brooklyn College CISC 3440 Machine Learning">
+  <meta property="og:title" content="Unsupervised Learning Algorithm">
+  <meta property="og:description" content="What is Unsupervised Learning # In supervised learning data comes with
+inputs x output labels y In unsupervised learning data comes with
+inputs x The unsupervised algorithm job is to find some some pattern or structure in the data.
+In unsupervised learning we are given the data set without any labels. The unsupervised algorithm is tasked with trying to find interesting patterns that are present in the data. It doesn’t look for any predifined particuliar category like a classfication algorithm or for a number like a regression algorithm.">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="docs">
+<title>Unsupervised Learning Algorithm | Brooklyn College CISC 3440 Machine Learning</title>
+<link rel="icon" href="/favicon.png" >
+<link rel="manifest" href="/manifest.json">
+<link rel="canonical" href="/docs/concepts/unsupervised_learning/">
+<link rel="stylesheet" href="/book.min.a7616cf2799b58bddffce9438e31fdbfc6393687cfc0950a4a17cd1cce7e35f6.css" >
+  <script defer src="/fuse.min.js"></script>
+  <script defer src="/en.search.min.5ce8ab836ed3272fccc314d95cbd342e32e3bf232a8e21f3e35be95ebcc47d7d.js" ></script>
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+  
+</head>
+<body dir="ltr">
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      <div class="book-menu-content">
+        
+  <nav>
+<h2 class="book-brand">
+  <a class="flex align-center" href="/"><span>Brooklyn College CISC 3440 Machine Learning</span>
+  </a>
+</h2>
+
+
+<div class="book-search hidden">
+  <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+<script>document.querySelector(".book-search").classList.remove("hidden")</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/home/" class="">Course Information</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/concepts/" class="">Concepts</a>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/concepts/ml_applications/" class="">ML Applications</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/concepts/supervised_learning/" class="">Supervised Learning Algorithm</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/concepts/unsupervised_learning/" class="active">Unsupervised Learning Algorithm</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <span>Projects</span>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+
+
+ 
+      </div>
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <h3>Unsupervised Learning Algorithm</h3>
+
+  <label for="toc-control">
+    
+    <img src="/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
+
+
+  
+  <aside class="hidden clearfix">
+    
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#what-is-unsupervised-learning">What is Unsupervised Learning</a></li>
+    <li><a href="#unsupervised-learning-algorithms">Unsupervised Learning Algorithms</a>
+      <ul>
+        <li><a href="#clustering">Clustering</a></li>
+        <li><a href="#clustering-examples">Clustering Examples</a></li>
+        <li><a href="#anomaly-detection-dimensionality-reduction-dot">Anomaly Detection/Dimensionality reduction.</a></li>
+      </ul>
+    </li>
+    <li><a href="#review-question">Review Question</a></li>
+  </ul>
+</nav>
+
+
+
+  </aside>
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown book-article"><h2 id="what-is-unsupervised-learning">
+  What is Unsupervised Learning
+  <a class="anchor" href="#what-is-unsupervised-learning">#</a>
+</h2>
+<p>In <strong>supervised learning</strong> data comes with</p>
+<ul>
+<li>inputs x</li>
+<li>output labels y</li>
+</ul>
+<p>In <strong>unsupervised learning</strong> data comes with</p>
+<ul>
+<li>inputs x</li>
+</ul>
+<p><strong>The unsupervised algorithm job is to find some some pattern or structure in the data.</strong></p>
+<p>In <strong>unsupervised learning</strong> we are given the data set without any
+labels. The <strong>unsupervised algorithm</strong> is tasked with trying to find
+interesting patterns that are present in the data. It doesn&rsquo;t look for
+any predifined particuliar category like a <strong>classfication</strong> algorithm
+or for a number like a <strong>regression</strong> algorithm.</p>
+<p>As you can see below the data in the Unsupervised set is unlabeled. The algorithm
+just needs to figure out if some pattern exists in the data.</p>
+<figure><img src="/ox-hugo/2025-08-08_10-46-45_screenshot.png">
+</figure>
+
+<h2 id="unsupervised-learning-algorithms">
+  Unsupervised Learning Algorithms
+  <a class="anchor" href="#unsupervised-learning-algorithms">#</a>
+</h2>
+<h3 id="clustering">
+  Clustering
+  <a class="anchor" href="#clustering">#</a>
+</h3>
+<p>One type of unsupervised algorithms is called a clustering algorithm
+because it looks for data points that can be grouped into clusters.</p>
+<p>Clustering algorithms try and take data without labels and group it
+into clusters.</p>
+<p>In the data set below we can see that the data can be grouped into two
+distinct <strong>Clusters</strong>. The type of an algorithm that does this kind of
+pattern recognition is called a <strong>Clustering Algorithm</strong>.</p>
+<figure><img src="/ox-hugo/2025-08-08_10-59-20_screenshot.png">
+</figure>
+
+<h3 id="clustering-examples">
+  Clustering Examples
+  <a class="anchor" href="#clustering-examples">#</a>
+</h3>
+<h4 id="google-news">
+  Google News
+  <a class="anchor" href="#google-news">#</a>
+</h4>
+<p>One example of clustering, is the way GOOGLE NEWS assembles it&rsquo;s news
+feeds. Every day google news looks at Hundreds of thousands of
+articles and groups related stories together. Clustering these articles
+together is all done by an <strong>unsupervised clustering ml algorithm</strong>.</p>
+<p>The algorithm looks for similiar words in articles and groups.  Notice
+the words &ldquo;panda&rdquo; &ldquo;twin&rdquo; and &ldquo;zoo&rdquo; appear in all the articles.  So it
+finds articles that mentions similiar words and group them together.
+This algo figures out on its own which words suggest that articles
+belong in the same group. There is no human intervention.</p>
+<figure><img src="/ox-hugo/2025-08-08_11-08-53_screenshot.png">
+</figure>
+
+<h4 id="dna-microarry">
+  DNA microarry
+  <a class="anchor" href="#dna-microarry">#</a>
+</h4>
+<p>The following image shows a table of columns and rows.  Each column
+represents a person and each row is a different gene. The different
+color values show how much of that gene is active in a given person.</p>
+<figure><img src="/ox-hugo/2025-08-08_11-28-12_screenshot.png">
+</figure>
+
+<p>The clustering algorithm can group people with similiar gene
+characterstics into different types. remember the types are not
+specified before. There is no predefined training set that says
+people with these genes are type 1 and people with these are
+type 2. The algorithm finds the patterns of clusters by itself.</p>
+<figure><img src="/ox-hugo/2025-08-08_11-33-44_screenshot.png">
+</figure>
+
+<h4 id="grouping-customers">
+  grouping customers
+  <a class="anchor" href="#grouping-customers">#</a>
+</h4>
+<p>Many companies have large databases of customer information.
+Given this data the clustering algorithm can group the customers
+into different market segments,so the company can understand the
+different types of customers and their needs.</p>
+<p>In the below example DeepLearning.ai tried to understand
+why students were taking it&rsquo;s classes.</p>
+<figure><img src="/ox-hugo/2025-08-08_11-41-49_screenshot.png">
+</figure>
+
+<h3 id="anomaly-detection-dimensionality-reduction-dot">
+  Anomaly Detection/Dimensionality reduction.
+  <a class="anchor" href="#anomaly-detection-dimensionality-reduction-dot">#</a>
+</h3>
+<p>These are two additional algorithms we will discuss further as the
+course goes on.</p>
+<h4 id="anomaly-detection">
+  Anomaly Detection
+  <a class="anchor" href="#anomaly-detection">#</a>
+</h4>
+<p>Used to detect unusual events.
+Used for fraud detection in the financial system.</p>
+<h4 id="dimensionality-reduction-dot">
+  Dimensionality reduction.
+  <a class="anchor" href="#dimensionality-reduction-dot">#</a>
+</h4>
+<p>Lets you take a big data set and compress it a much smaller
+data set without loosing the important detail.</p>
+<h2 id="review-question">
+  Review Question
+  <a class="anchor" href="#review-question">#</a>
+</h2>
+<p>Which type of machine learning algorithms should we use f
+of the following applications ?</p>
+<figure><img src="/ox-hugo/2025-08-08_12-01-34_screenshot.png">
+</figure>
+
+</article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+
+
+
+
+</div>
+
+
+
+  <script>(function(){function e(e){const t=window.getSelection(),n=document.createRange();n.selectNodeContents(e),t.removeAllRanges(),t.addRange(n)}document.querySelectorAll("pre code").forEach(t=>{t.addEventListener("click",function(){if(window.getSelection().toString())return;e(t.parentElement),navigator.clipboard&&navigator.clipboard.writeText(t.parentElement.textContent)})})})()</script>
+
+
+ 
+        
+      </footer>
+
+      
+  
+  <div class="book-comments">
+
+</div>
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+    <aside class="book-toc">
+      <div class="book-toc-content">
+        
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#what-is-unsupervised-learning">What is Unsupervised Learning</a></li>
+    <li><a href="#unsupervised-learning-algorithms">Unsupervised Learning Algorithms</a>
+      <ul>
+        <li><a href="#clustering">Clustering</a></li>
+        <li><a href="#clustering-examples">Clustering Examples</a></li>
+        <li><a href="#anomaly-detection-dimensionality-reduction-dot">Anomaly Detection/Dimensionality reduction.</a></li>
+      </ul>
+    </li>
+    <li><a href="#review-question">Review Question</a></li>
+  </ul>
+</nav>
+
+
+ 
+      </div>
+    </aside>
+    
+  </main>
+
+  
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
